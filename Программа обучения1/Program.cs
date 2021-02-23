@@ -1,5 +1,4 @@
 using System;
-
 namespace ConsoleApp1
 {
     class Program
@@ -36,7 +35,6 @@ namespace ConsoleApp1
                     stars += 2;
                     Console.WriteLine();
             }
-
             int yl = 0;
             int rowl = (row-1)/2;
             int columnl = 1;
@@ -85,7 +83,6 @@ namespace ConsoleApp1
                     starsh += 2;
                     Console.WriteLine();
             }
-
             int ylh = 0;
             int rowlh = row/2;
             int columnlh = 1;
@@ -109,7 +106,6 @@ namespace ConsoleApp1
                 starslh -= 2;
                 Console.WriteLine();
             }
-            	
             }
            }
             Console.ReadLine();
