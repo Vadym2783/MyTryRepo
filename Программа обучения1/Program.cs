@@ -9,6 +9,8 @@ namespace ConsoleApp1
            a++;
            while (a>0)
            {
+         Console.WriteLine("write the symbol");
+         string symbol = Console.ReadLine();
          Console.WriteLine("write quantity of row");
          int row = int.Parse(Console.ReadLine());
          int column = (row-1)/2;
@@ -29,7 +31,8 @@ namespace ConsoleApp1
                     int z =0;
                     while (z < stars)
                     {
-                        Console.Write(" *");
+                        Console.Write(" ");
+                        Console.Write(symbol);
                         z++;
                     }
                     stars += 2;
@@ -52,7 +55,8 @@ namespace ConsoleApp1
                 int zl =0;
                 while (zl < starsl)
                 {
-                    Console.Write(" *");
+                    Console.Write(" ");
+                    Console.Write(symbol);
                     zl++;
                 }
                 starsl -= 2;
@@ -69,7 +73,7 @@ namespace ConsoleApp1
                     int xh = 0;
                     while (xh < columnh)
                     {
-                        Console.Write("  ");
+                        Console.Write(" ");
                         xh++;
                     }
                     columnh--;
@@ -77,7 +81,7 @@ namespace ConsoleApp1
                     int zh =0;
                     while (zh < starsh)
                     {
-                        Console.Write(" *");
+                        Console.Write(symbol);
                         zh++;
                     }
                     starsh += 2;
@@ -92,7 +96,7 @@ namespace ConsoleApp1
                 int xlh = 0;
                 while (xlh < columnlh)
                 {
-                    Console.Write("  ");
+                    Console.Write(" ");
                     xlh++;
                 }
                 columnlh++;
@@ -100,7 +104,7 @@ namespace ConsoleApp1
                 int zlh =0;
                 while (zlh < starslh)
                 {
-                    Console.Write(" *");
+                    Console.Write(symbol);
                     zlh++;
                 }
                 starslh -= 2;
